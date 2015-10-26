@@ -1,0 +1,26 @@
+public class chessGame
+{
+  boolean start = readBoolean("Would you like to play a game of chess? (true/false): ")
+  
+  if(start == true)
+  {
+    startGame();
+  }
+}
+
+private void startGame()
+{
+  whitePawns();
+  whiteCastles();
+  whiteKnights();
+  whiteBishops();
+  whiteKing();
+  whiteQueen();
+  
+  blackPawns();
+  blackCastles();
+  blackKnights();
+  blackBishops();
+  blackKing();
+  blackQueen();
+}
