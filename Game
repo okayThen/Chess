@@ -30,13 +30,13 @@ private void startGame()
 private void whitePawns()
 {
   Pawn WP1 = new Pawn("WP1");
-  Pawn WP2 = new Pawn("WP1");
-  Pawn WP3 = new Pawn("WP1");
-  Pawn WP4 = new Pawn("WP1");
-  Pawn WP5 = new Pawn("WP1");
-  Pawn WP6 = new Pawn("WP1");
-  Pawn WP7 = new Pawn("WP1");
-  Pawn WP8 = new Pawn("WP1");
+  Pawn WP2 = new Pawn("WP2");
+  Pawn WP3 = new Pawn("WP3");
+  Pawn WP4 = new Pawn("WP4");
+  Pawn WP5 = new Pawn("WP5");
+  Pawn WP6 = new Pawn("WP6");
+  Pawn WP7 = new Pawn("WP7");
+  Pawn WP8 = new Pawn("WP8");
 }
 
 private void whiteCastles()
@@ -54,5 +54,5 @@ private void whiteKnights()
 private void whiteBishops()
 {
   Bishop WB1 = new Bishop("WB1");
-  Bihop 
+  Bishop WB2 = new Bishop("WB2");
 }
