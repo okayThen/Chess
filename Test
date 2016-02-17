@@ -1,0 +1,19 @@
+public class Test
+{
+    public void run()
+    {
+        Game game = new Game();
+        
+        while(true)
+        {
+            game.play();
+            boolean again = readBoolean("Play again (Y/N)?");
+            
+            if(again != Character.ignoreCase(Y))
+            {
+                System.out.println("Thanks for playing!");
+                break;
+            }
+        }
+    }
+}
