@@ -1,58 +1,17 @@
 public class chessGame
 {
-  boolean start = readBoolean("Would you like to play a game of chess? (true/false): ")
-  
-  if(start == true)
+  while(true)
   {
-    startGame();
+    playGame();
+    boolean again = readBoolean("Play again (Y/N)?");
+    
+    if(again != Character.ignoreCase(Y))
+      break;
   }
 }
 
 private void startGame()
 {
-  printBoard();
-
-  whitePawns();
-  whiteCastles();
-  whiteKnights();
-  whiteBishops();
-  whiteKing();
-  whiteQueen();
-  
-  blackPawns();
-  blackCastles();
-  blackKnights();
-  blackBishops();
-  blackKing();
-  blackQueen();
-}
-
-private void whitePawns()
-{
-  Pawn WP1 = new Pawn("WP1");
-  Pawn WP2 = new Pawn("WP2");
-  Pawn WP3 = new Pawn("WP3");
-  Pawn WP4 = new Pawn("WP4");
-  Pawn WP5 = new Pawn("WP5");
-  Pawn WP6 = new Pawn("WP6");
-  Pawn WP7 = new Pawn("WP7");
-  Pawn WP8 = new Pawn("WP8");
-}
-
-private void whiteCastles()
-{
-  Castle WC1 = new Castle("WC1");
-  Castle WC2 = new Castle("WC2");
-}
-
-private void whiteKnights()
-{
-  Knight WK1 = new Knight("WK1");
-  Knight WK2 = new Knight("WK2");
-}
-
-private void whiteBishops()
-{
-  Bishop WB1 = new Bishop("WB1");
-  Bishop WB2 = new Bishop("WB2");
+  Player player = new Player();
+  player.printBoard();
 }
