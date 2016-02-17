@@ -1,0 +1,33 @@
+public class Board
+{
+    public Board()
+    {
+        grid = new Location[9][9];
+        
+        for(int i=0; i<9; i++)
+        {
+            for(int k=0; k<9; k++)
+            {
+                Board[i][k] = new Location(i,k);
+            }
+        }
+    }
+    
+    public String toString()
+    {
+        String result;
+        int ro = 8;
+        
+        result += (" a b c d e f g h " + "\n");
+        for(int i=0; i<9; i++)
+        {
+            result += "" + ro-i;
+            for(int k=0; k<9; k++)
+            {
+                result += Board[i][k].toString();
+            }
+            result += "\n";
+        }
+    }
+
+}
