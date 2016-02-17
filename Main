@@ -1,12 +1,25 @@
-public class Test
+public class MyProgram extends ConsoleProgram
 {
+
     public void run()
     {
-        Game game = new Game();
+        int numPlayers;
+        while(true)
+        {
+            numPlayers = readInteger("How many players? (0/1/2)");
+            
+            if(numPlayers != 0 || numPlayers != 1 || numPlayers != 2)
+                System.out.println("Invalid entry, try again.");
+            
+            if(numPlayers == 0 || numPlayers == 1 || numPlayers == 2)
+                break;
+        }
+        
+        Game game = new Game(numPlayers);
         
         while(true)
         {
-            game.play();
+            Game.play();
             boolean again = readBoolean("Play again (Y/N)?");
             
             if(again != Character.ignoreCase(Y))
