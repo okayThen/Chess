@@ -1,17 +1,19 @@
-public class chessGame
-{
-  while(true)
-  {
-    playGame();
-    boolean again = readBoolean("Play again (Y/N)?");
-    
-    if(again != Character.ignoreCase(Y))
-      break;
-  }
-}
 
-private void startGame()
+public class Game
 {
-  Player player = new Player();
-  player.printBoard();
+    private int numPlayers;
+    
+    public Game()
+    {
+        Board board = new Board();
+        
+        while(true)
+        {
+            whiteTurn();
+            blackTurn();
+        }
+    }
+    
+    
+
 }
