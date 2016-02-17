@@ -1,8 +1,6 @@
 
 public class Game
 {
-    private int numPlayers;
-    
     public Game()
     {
         Board board = new Board();
@@ -10,7 +8,12 @@ public class Game
         while(true)
         {
             whiteTurn();
+            if(findWinner().equals("white");
+                System.out.println("Game over" + "\n" + "White wins");
+            
             blackTurn();
+            if(findWinner().equals("black");
+                System.out.println("Game over" + "\n" + "Black wins");
         }
     }
     
