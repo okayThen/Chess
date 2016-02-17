@@ -16,7 +16,7 @@ public abstract class piece
   
   public void setName(String n)
   {
-    this.name = n;
+    name = n;
   }
   
   public Location getPosition()
@@ -26,6 +26,6 @@ public abstract class piece
   
   public void setPosition(Location p)
   {
-    this.position = p;
+    position = p;
   }
 }
