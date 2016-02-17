@@ -1,0 +1,31 @@
+public abstract class piece
+{
+  private String name;
+  private Location position;
+  
+  public piece(String name, Location position)
+  {
+    this.name = name;
+    this.position = position;
+  }
+  
+  public String getName()
+  {
+    return name;
+  }
+  
+  public void setName(String n)
+  {
+    this.name = n;
+  }
+  
+  public Location getPosition()
+  {
+    return position;
+  }
+  
+  public void setPosition(Location p)
+  {
+    this.position = p;
+  }
+}
